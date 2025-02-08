@@ -111,15 +111,5 @@ def partition(low,high,List):
     
     
             
-
-    
-if __name__=='__main__':
-    L=[5,4,4,4,3,2,2,1,1]
-    print("Before sortig : ",L)
-    c=quick_sort(0,len(L)-1,L)
-    print("After Sorting : ",L)
-    print("Number od shifts : ",c)
-            
-
             
             
