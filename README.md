@@ -8,9 +8,9 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
 ### 📌 Data Structures
 
 - **Linked Lists**
-  - [Singly Linked List](Data Structures/Linked_Lists/linked_list.py)
-  - [Doubly Linked List](Data_Structures/Linked_Lists/doubly_linked_list.py)
-  - [Circular Doubly Linked List](Data_Structures/Linked_Lists/circular_doubly_linked_list.py)
+  - [Singly Linked List](Data_Structures/Linked_lists/linked_list.py)
+  - [Doubly Linked List](Data_Structures/Linked_lists/doubly_linked_list.py)
+  - [Circular Doubly Linked List](Data_Structures/Linked_lists/circular_doubly_linked_list.py)
 
 - **Stacks**
   - [Stack Using Array](Data_Structures/Stacks/stack_using_array.py)
