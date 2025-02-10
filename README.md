@@ -24,10 +24,10 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
 ### 📌 Algorithms
 
 - **Sorting Algorithms**
-  - [Sorting Algorithms](Algorithms/Sorting/Sorting_Algo.py)
+  - [Sorting Algorithms](Algorithms/Sorting_Algo.py)
 
 - **Searching Algorithms**
-  - [Searching Algorithms](Algorithms/Searching/Searching_Algo.py)
+  - [Searching Algorithms](Algorithms/Searching_Algo.py)
 
 ## 🚀 Getting Started
 
