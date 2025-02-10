@@ -34,3 +34,8 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Linear_search](Algorithms/Searching/Linear_search.py)
   - [Binary_search](Algorithms/Searching/Binary_search.py)
   - [Bitonic_search](Algorithms/Searching/Bitonic_search.py)
+    
+- **Traversal Algorithms**
+  - [Binary_tree_traversal_algorithms](Algorithms/Traversal/Binary_tree_traversal_algo.py)
+  
+  
