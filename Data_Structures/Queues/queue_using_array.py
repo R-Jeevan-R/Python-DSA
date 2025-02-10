@@ -1,4 +1,9 @@
-class queue():
+'''Queue -- FIFO(FIsrt-In Fisrt-Out) linear Data structure.
+Implementing a queue using an array will store elements in contigous memroy locations.
+Addition of elements is done at start of array where as Deletion of elements
+is done at the end of array.'''
+
+class Queue():
     queue=[]
     front=rear=0
     max_size=0
@@ -8,8 +13,9 @@ class queue():
         self.max_size=max_size
         self.queue=[float('inf')]*self.max_size
 
+    #Time Complexity -- O(1)
     def enqueue(self,element):
-        if self.rear+1==self.max_size:
+        if self.is_full():
             print("Queue Overflow\n")
             return
         elif self.front==-1:
@@ -22,9 +28,9 @@ class queue():
             self.queue[self.rear]=element
             return
 
-        
+    #Time Complexity -- O(n)
     def dequeue(self):
-        if self.front==-1:
+        if self.is_empty():
             print("Queue Underflow\n")
             return
         elif self.front==self.rear:
@@ -35,14 +41,33 @@ class queue():
             return d
         else:
             d=self.queue[self.front]
-            self.queue[self.front]=float('inf')
-            self.front+=1
+            i=0
+            while i<self.rear:
+                self.queue[i]=self.queue[i+1]
+                i+=1
+            self.rear=i-1
+            while i<self.max_size:
+                self.queue[i]=float('inf')
+                i+=1
             return d
 
+    #Time Complexity -- O(1)
+    def is_empty(self):
+        if self.front==-1:
+            return True
+        return False
+
+    #Time Complexity -- O(1)
+    def is_full(self):
+        if self.rear+1==self.max_size:
+            return True
+        return False
+    
+    #Time Complexity -- O(n)
     def print_queue(self):
         for i in range(self.front,self.rear+1):
             print(self.queue[i],end=' ')
-        
+        print()
 
 
         

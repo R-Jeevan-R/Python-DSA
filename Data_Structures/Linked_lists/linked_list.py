@@ -1,3 +1,6 @@
+''' Linked list is a Linear Data stucture stores elements in linearly singly connected nodes and
+the start of list is pointed by head of linked list.'''
+
 class Node():
     def __init__(self,data):
         self.data=data
@@ -7,7 +10,9 @@ class Node():
 class Linked_list():
     def  __init__(self):
         self.head=None
-        
+
+    #Time Complexity -- O(n)
+    #Inserting a node at end of list
     def append(self,data):
         if not self.head:
             self.head=Node(data)
@@ -17,7 +22,9 @@ class Linked_list():
             temp=temp.next
         node=Node(data)
         temp.next=node
-        
+
+    #Time Complexity -- O(1)
+    #Inserting a node at start of list
     def add(self,data):
         if not self.head:
             self.head=Node(data)
@@ -26,6 +33,8 @@ class Linked_list():
         node.next=self.head
         self.head=node
 
+    #Time Complexity -- O(n)
+    #Inserting a node at specified position
     def insert(self,data,position):
         if not self.head:
             if  position!=1:
@@ -44,7 +53,7 @@ class Linked_list():
         node.next=temp.next
         temp.next=node
                 
-
+    #Time Complexity -- O(n)
     def print_list(self):
         if not self.head:
             print(None)
@@ -58,6 +67,7 @@ class Linked_list():
             break
         print("None")
 
+    #Time Complexity -- O(1)
     def delete_from_beginning(self):
         if not self.head:
             print("Linked list is empty\n")
@@ -66,6 +76,7 @@ class Linked_list():
         self.head=temp.next
         temp=None
 
+    #Time Complexity -- O(n)
     def delete_from_end(self):
         if not self.head:
             print("Linked list is empty\n")

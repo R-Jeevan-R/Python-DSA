@@ -1,3 +1,7 @@
+''' Circular Doubly Linked list stores elements in linearly doubly
+connected nodes and every node maintains two pointers next and prev.
+And also the last and first nodes are connected to each other.
+Start of the linked list is pointed by head pointer.'''
 class Node():
     def __init__(self,data):
         self.prev=None
@@ -8,6 +12,8 @@ class Circular_doubly_linked_list():
     def __init__(self):
         self.head=None
 
+    #Time Complexity -- O(1)
+    #Inserting a node at end of list
     def append(self,element):
         node=Node(element)
         if not self.head:
@@ -22,7 +28,8 @@ class Circular_doubly_linked_list():
         last.next=node
         
         
-
+    #Time Complexity -- O(1)
+    #Inserting a node at start of list
     def add(self,element):
         node=Node(element)
         if not self.head:
@@ -37,6 +44,8 @@ class Circular_doubly_linked_list():
         self.head.prev=node
         self.head=node
 
+    #Time Complexity -- O(n)
+    #Inserting a node at specified position
     def insert(self,element,position):
         if not self.head:
             if  position!=1:
@@ -58,6 +67,7 @@ class Circular_doubly_linked_list():
         temp.next=node
         node.prev=temp
 
+    #Time Complexity -- O(n)
     def print_list(self):
         if not self.head:
             print(None)
@@ -69,10 +79,8 @@ class Circular_doubly_linked_list():
             temp=temp.next
             print(f"{temp.data}",end="<-->")
         print(f"{last.data}")
-        
-        
             
-
+    #Time Complexity -- O(n)
     def print_reversed_list(self):
         if not self.head:
             print(None)
@@ -83,7 +91,7 @@ class Circular_doubly_linked_list():
             last=last.prev
         print(f"{self.head.data}")
 
-
+    #Time Complexity -- O(1)
     def delete_from_beginning(self):
         if not self.head:
             print("Circular doubly linked list is empty\n")
@@ -97,6 +105,7 @@ class Circular_doubly_linked_list():
         self.head.prev=temp.prev
         temp=None
 
+    #Time Complexity -- O(1)
     def delete_from_end(self):
         if not self.head:
             print("Doubly linked list is empty\n")
