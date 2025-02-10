@@ -1,7 +1,7 @@
 ''' Insertion Sort -- Maintains Two sub Lists, one is sorted and other is unsorted
 Time Complexity -- O(n) to O(n^2)
 Space Complexity -- O(1)
-Inpllace algorithm'''
+Inplace algorithm -- No extra space required'''
 def Insertion_sort(List):
     for i in range(1,len(List)):
         key=List[i]
