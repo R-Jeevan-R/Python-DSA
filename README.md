@@ -13,13 +13,13 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Circular Doubly Linked List](Data_Structures/Linked_lists/circular_doubly_linked_list.py)
 
 - **Stacks**
-  - [Stack Using Array](Data_Structures/Stacks/stack_using_array.py)
-  - [Stack Using Linked List](Data_Structures/Stacks/stack_using_linked_list.py)
+  - [Stack Using Array](Data_Structures/Stacks_Queues/stack_using_array.py)
+  - [Stack Using Linked List](Data_Structures/Stacks_Queues/stack_using_linked_list.py)
 
 - **Queues**
-  - [Queue Using Array](Data_Structures/Queues/queue_using_array.py)
-  - [Queue Using Linked List](Data_Structures/Queues/queue_using_linked_list.py)
-  - [Circular Queue Using Array](Data_Structures/Queues/circular_queue_using_array.py)
+  - [Queue Using Array](Data_Structures/Stacks_Queues/queue_using_array.py)
+  - [Queue Using Linked List](Data_Structures/Stacks_Queues/queue_using_linked_list.py)
+  - [Circular Queue Using Array](Data_Structures/Stacks_Queues/circular_queue_using_array.py)
 
 ### 📌 Algorithms
 
