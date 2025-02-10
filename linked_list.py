@@ -82,17 +82,6 @@ class Linked_list():
         
 
 
-if __name__=='__main__':
-    ll=Linked_list()
-    ll.add(10)
-    ll.delete_from_end()
-    ll.print_list()
-
-
-
-
-
-
 
 
 

@@ -111,15 +111,6 @@ class Circular_doubly_linked_list():
         self.head.prev=temp
         
         
-if __name__=='__main__':
-    ll=Circular_doubly_linked_list()
-    for i in range(10):
-        ll.append(i)
-    ll.print_list()
-
-
-
-
 
 
         

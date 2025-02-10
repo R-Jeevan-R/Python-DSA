@@ -103,12 +103,5 @@ class Doubly_linked_list():
         temp.next=None
 
 
-if __name__=='__main__':
-    ll=Doubly_linked_list()
-    for i in range(10):
-        ll.insert(i,i+1)
-    ll.print_reversed_list()
-        
-        
         
     
