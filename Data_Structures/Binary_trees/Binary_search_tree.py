@@ -1,4 +1,4 @@
-'''BInary search tree -- Is a binary tree in which at each node, left child will have data less than or equal to its data
+'''Binary search tree -- Is a binary tree in which at each node, left child will have data less than or equal to its data
 and right child will have data greater than its data.'''
 
 from Binary_tree import *
