@@ -21,6 +21,11 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Queue Using Linked List](Data_Structures/Queues/queue_using_linked_list.py)
   - [Circular Queue Using Array](Data_Structures/Queues/circular_queue_using_array.py)
 
+- **Binary Trees**
+  - [Binary_tree](Data_Structures/Binary_trees/Binary_tree.py)
+  - [Binary_search_tree](Data_Structures/Binary_trees/Binary_search_tree.py)
+
+
 ### 📌 Algorithms
 
 - **Sorting Algorithms**
@@ -37,5 +42,5 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
     
 - **Traversal Algorithms**
   - [Binary_tree_traversal_algorithms](Algorithms/Traversal/Binary_tree_traversal_algo.py)
-  
+            
   
