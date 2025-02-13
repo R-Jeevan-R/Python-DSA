@@ -22,23 +22,16 @@ class Binary_tree():
 
     #TIme Complexity -- O(n)
     def height(self,root):
-        if self.is_leaf(root):
+        if not root or self.is_leaf(root):
             return 0
-        elif root.left and not root.right:
-            return 1+self.height(root.left)
-        elif root.right and not root.left:
-            return 1+self.height(root.right)
         return 1+max(self.height(root.left),self.height(root.right))
 
     #TIme Complexity -- O(n)
     def number_of_nodes(self,root):
-        if self.is_leaf(root):
-            return 1
-        elif root.left and not root.right:
-            return 1+self.number_of_nodes(root.left)
-        elif root.right and not root.left:
-            return 1+self.number_of_nodes(root.right)
-        return 1+self.number_of_nodes(root.left)+self.number_of_nodes(root.right)
+        if root:
+            return 1+self.number_of_nodes(root.left)+self.number_of_nodes(root.right)
+        else:
+            return 0
 
     #TIme Complexity -- O(n)
     def is_full(self,root):
@@ -48,6 +41,30 @@ class Binary_tree():
             return self.is_full(root.left) and self.is_full(root.right)
         else:
             return False
+        
+    #Time Complexity -- O(n)
+    def number_of_leaves(self,root):
+        if not root:
+            return 0
+        elif self.is_leaf(root):
+            return 1
+        return self.number_of_leaves(root.right)+self.number_of_leaves(root.left)
+
+    #Time Complexity -- O(n)
+    def number_of_non_leaves(self,root):
+        if not root or self.is_leaf(root):
+            return 0
+        return 1+self.number_of_non_leaves(root.left)+self.number_of_non_leaves(root.right)
+    
+    #Time Complexity -- O(n)
+    def number_of_full_nodes(self,root):
+        if not root or self.is_leaf(root):
+            return 0
+        elif root.right and root.left:
+            return 1+self.number_of_full_nodes(root.left)+self.number_of_full_nodes(root.right)
+        return self.number_of_full_nodes(root.left)+self.number_of_full_nodes(root.right)
+        
+        
 
 
 
