@@ -64,8 +64,6 @@ class Binary_tree():
             return 1+self.number_of_full_nodes(root.left)+self.number_of_full_nodes(root.right)
         return self.number_of_full_nodes(root.left)+self.number_of_full_nodes(root.right)
         
-        
-
-
+ 
 
         
