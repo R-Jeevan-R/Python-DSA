@@ -19,7 +19,7 @@ class Binary_search_tree(Binary_tree):
             return root
         
     #Time Complexity -- O(n) -- For unbalanced binray search tree
-    def delete_key(self,node,root):
+    def delete_node(self,node,root):
         if self.is_leaf(node):
             temp=root
             if temp==node:
