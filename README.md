@@ -25,6 +25,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Binary_tree](Data_Structures/Binary_trees/Binary_tree.py)
   - [Binary_search_tree](Data_Structures/Binary_trees/Binary_search_tree.py)
   - [Balanced_binary_search_tree(AVL_tree)](Data_Structures/Binary_trees/AVL_tree.py)
+  - [Binary_Heap(Max_heap)](Data_Structures/Binary_trees/Max_heap.py)
 
 
 ### 📌 Algorithms
@@ -36,6 +37,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Merge_Sort](Algorithms/Sorting/Merge_sort.py)
   - [Quick_Sort](Algorithms/Sorting/Quick_sort.py)
   - [Counting_Sort](Algorithms/Sorting/Counting_sort.py)
+  - [Heap_Sort](Algorithms/Sorting/Heap_sort.py)
 
 - **Searching Algorithms**
   - [Linear_search](Algorithms/Searching/Linear_search.py)
