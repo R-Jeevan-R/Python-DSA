@@ -2,7 +2,7 @@
 priority not just on FIFO order.'''
 
 from Binary_heaps import Max_heap
-
+''' Maximum element will have highest priority in this implementation'''
 class Priority_queue():
     def __init__(self):
         self.heap=Max_heap([])
