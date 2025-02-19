@@ -20,6 +20,8 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Queue Using Array](Data_Structures/Queues/queue_using_array.py)
   - [Queue Using Linked List](Data_Structures/Queues/queue_using_linked_list.py)
   - [Circular Queue Using Array](Data_Structures/Queues/circular_queue_using_array.py)
+  - [Priority Queue using heap](Data_Structures/Queues/priority_queue_using_heap.py)
+
 
 - **Binary Trees**
   - [Binary_tree](Data_Structures/Binary_trees/Binary_tree.py)
