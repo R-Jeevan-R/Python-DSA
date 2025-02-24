@@ -12,6 +12,7 @@ class Queue():
         self.rear=-1
         self.max_size=max_size
         self.queue=[float('inf')]*self.max_size
+        self.num_of_elements=0
 
     #Time Complexity -- O(1)
     def enqueue(self,element):
@@ -22,10 +23,12 @@ class Queue():
             self.front+=1
             self.rear+=1
             self.queue[self.rear]=element
+            self.num_of_elements+=1
             return
         else:
             self.rear+=1
             self.queue[self.rear]=element
+            self.num_of_elements+=1
             return
 
     #Time Complexity -- O(n)
@@ -38,6 +41,7 @@ class Queue():
             self.queue[self.front]=float('inf')
             self.front=-1
             self.rear=-1
+            self.num_of_elements-=1
             return d
         else:
             d=self.queue[self.front]
@@ -49,6 +53,7 @@ class Queue():
             while i<self.max_size:
                 self.queue[i]=float('inf')
                 i+=1
+            self.num_of_elements-=1
             return d
 
     #Time Complexity -- O(1)

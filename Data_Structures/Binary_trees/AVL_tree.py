@@ -2,7 +2,7 @@
 Balance Factor, BF = Height(Right Sub Tree) - Height(Left Sub Tree).
 In AVL tree the BF will be in {-1,0,1}.'''
 
-from Binary_search_tree import *
+from Binary_search_tree import * #Refer BST in Data Structures
 
 class AVL_tree(Binary_search_tree):
     def __init__(self,root_key):

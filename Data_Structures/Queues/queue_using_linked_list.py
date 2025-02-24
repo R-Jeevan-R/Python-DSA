@@ -13,10 +13,12 @@ class Queue():
     def __init__(self):
         self.front=None
         self.rear=None
+        self.num_of_elements=0
 
     #Time Complexity -- O(1)
     def enqueue(self,data):
         node=Node(data)
+        self.num_of_elements+=1
         if not self.front:
             self.front=node
             self.rear=node
@@ -30,9 +32,11 @@ class Queue():
             print("Queue underflow\n")
             return
         elif self.front==self.rear:
+            self.num_of_elements-=1
             d=self.front.data
             self.front=self.rear=None
             return d
+        self.num_of_elements-=1
         d=self.front.data
         self.front=self.front.next
         return d

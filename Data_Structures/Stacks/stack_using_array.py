@@ -9,6 +9,7 @@ class Stack():
     def __init__(self,max_size):
         self.max_size=max_size
         self.stack=[float('inf')]*self.max_size
+        self.num_of_elements=0
         self.top=-1
 
     #Time Complexity -- O(1)
@@ -18,6 +19,7 @@ class Stack():
             return
         else:
             self.top+=1
+            self.num_of_elements+=1
             self.stack[self.top]=element
             return
         
@@ -28,6 +30,7 @@ class Stack():
             return None
         else:
             p=self.stack[self.top]
+            self.num_of_elements-=1
             self.stack[self.top]=float('inf')
             self.top-=1
             return p

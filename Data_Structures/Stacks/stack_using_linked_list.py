@@ -11,18 +11,21 @@ class Node():
 class Stack():
     def __init__(self):
         self.top=None
+        self.num_of_elements=0
 
     #Time Complexity -- O(1)   
     def push(self,element):
         node=Node(element)
         node.next=self.top
         self.top=node
+        self.num_of_elements+=1
 
     #Time Complexity -- O(1)
     def pop(self):
         if not self.top:
             print("Stack underflow\n")
             return
+        self.num_of_elements-=1
         p=self.top.data
         self.top=self.top.next
         return p

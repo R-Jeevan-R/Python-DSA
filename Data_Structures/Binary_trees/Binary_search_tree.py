@@ -1,7 +1,7 @@
 '''BInary search tree -- Is a binary tree in which at each node, left child will have data less than or equal to its data
 and right child will have data greater than its data.'''
 
-from Binary_tree import *
+from Binary_tree import * #Refer Binary Tree in Data Structures
 class Binary_search_tree(Binary_tree):
     def __init__(self,root_key):
         super().__init__(root_key)
