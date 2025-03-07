@@ -1,6 +1,6 @@
 import math
 #Time Complexity -- O(nlogn)
-def primes(lower,upper):
+def Primes(lower,upper):
     if lower > upper :
         return "Specify interval correctly!"
     primes=[]
