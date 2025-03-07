@@ -22,12 +22,14 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Circular Queue Using Array](Data_Structures/Queues/circular_queue_using_array.py)
   - [Priority Queue using heap](Data_Structures/Queues/priority_queue_using_heap.py)
 
-
 - **Binary Trees**
   - [Binary_tree](Data_Structures/Binary_trees/Binary_tree.py)
   - [Binary_search_tree](Data_Structures/Binary_trees/Binary_search_tree.py)
   - [Balanced_binary_search_tree(AVL_tree)](Data_Structures/Binary_trees/AVL_tree.py)
   - [Binary_Heap(Max_heap)](Data_Structures/Binary_trees/Max_heap.py)
+
+- **Graphs**
+  - [Graph](Data_Structures/Graph.py)
 
 
 ### 📌 Algorithms
@@ -48,5 +50,14 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
     
 - **Traversal Algorithms**
   - [Binary_tree_traversal_algorithms](Algorithms/Traversal/Binary_tree_traversal_algo.py)
+  - [Graph_traversal_algorithms](Algorithms/Traversal/Graph_traversal_algo.py)
             
-  
+### Problem solving
+- **Fun With Numbers**
+  - [Armstrong_numbes](Problem%20Solving/Fun%20With%20-Numbers-/Armstrong.py)
+  - [Factos_and_PrimeFactors](Problem%20Solving/Fun%20With%20-Numbers-/Factors%20and%20Prime%20Factors%20of%20a%20number.py)
+  - [Fibinacci_Sequence](Problem%20Solving/Fun%20With%20-Numbers-/Fibonacci.py)
+  - [HCF_and_LCM](Problem%20Solving/Fun%20With%20-Numbers-/HCF%20-%20LCM.py)
+  - [LeapYear_or_Not](Problem%20Solving/Fun%20With%20-Numbers-/Leap_year_or_not.py)
+  - [PrimeNumbers](Problem%20Solving/Fun%20With%20-Numbers-/Primes.py)
+  - [Reverses_of_(Number,String,List,Tuple)](Problem%20Solving/Fun%20With%20-Numbers-/Reverse%20of%20(Number,String,List,Tuple).py)
