@@ -7,35 +7,52 @@ Internally uses a Stack to store nodes to visit next.'''
 
 from queue_using_linked_list import Queue #Refer Queue in Data Structures
 from stack_using_linked_list import Stack #Refer Stack in Data Structures
-from Graphs_using_adj_matrix import Graph #Refer Graph in Data Structures
-class Graph_traversal_algo():
-    #Time Complexity -- O(V+E), where V - Number of nodes/vertices and E - Number of edges
-    def BFS(self,graph,root):
-        visited=set()
-        visited.add(root)
+from Graph import Graph #Refer Graph in Data Structures
+
+def BFS(graph,root,visited,visit):
+        visited[root] =1
         queue=Queue()
         queue.enqueue(root)
-        print(f'{root}-->',end=' ')
+        visit.append(root)
         while queue.num_of_elements!=0:
             node=queue.dequeue()
             for adj in graph.dict[node]:
-                if adj not in visited:
-                    print(f'{adj}-->',end=' ')
-                    visited.add(adj)
+                if visited[adj] == 0:
+                    visit.append(adj)
+                    visited[adj] = 1
                     queue.enqueue(adj)
 
-    #Time Complexity -- O(V+E), where V - Number of nodes/vertices and E - Number of edges                  
-    def DFS(self,graph,root):
-        visited=set()
-        visited.add(root)
+def DFS(graph,root,visited,visit):
         stack=Stack()
         stack.push(root)
-        print(f'{root}-->',end=' ')
         while stack.num_of_elements != 0:
             node = stack.pop()
-            if node not in visited:
-                print(f'{node} -->', end=' ')
-                visited.add(node)
+            if visited[node] == 0:
+                visit.append(node)
+                visited[node] = 1
             for adj in reversed(graph.dict[node]):
-                if adj not in visited:
+                if visited[adj] == 0:
                     stack.push(adj)
+    
+class Graph_traversal_algo():
+    def BFT(self,graph):
+        visited = {}
+        visit = []
+        for node in graph.nodes:
+            visited[node] = 0
+        for node in visited :
+            if visited[node] == 0:
+                visit.append([])
+                BFS(graph,node,visited,visit[-1])
+        return visit
+
+    def DFT(self,graph):
+        visited = {}
+        visit = []
+        for node in graph.nodes:
+            visited[node] = 0
+        for node in visited :
+            if visited[node] == 0:      
+                visit.append([])
+                DFS(graph,node,visited,visit[-1])
+        return visit
