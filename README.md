@@ -29,7 +29,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Binary_Heap(Max_heap)](Data_Structures/Binary_trees/Max_heap.py)
 
 - **Graphs**
-  - [Graph](Data_Structures/Graph.py)
+  - [Graph](Data_Structures/Graphs/Graph.py)
 
 
 ### 📌 Algorithms
