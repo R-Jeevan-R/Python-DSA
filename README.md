@@ -53,7 +53,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Binary_tree_traversal_algorithms](Algorithms/Traversal/Binary_tree_traversal_algo.py)
   - [Graph_traversal_algorithms](Algorithms/Traversal/Graph_traversal_algo.py)
             
-### Problem solving
+### 🚩 Problem solving
 
 - **Being Greedy!(Sometimes makes life better but not everytime 😃)**
   - [Fractional_Knapsack](Problem%20Solving/Being%20Greedy!/Fractional_knapsack.py)
