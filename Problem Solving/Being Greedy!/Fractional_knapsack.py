@@ -35,11 +35,3 @@ def Fractional_knapsack(number_of_items,weights,profits,capacity):
         max_profit += pw*capacity
 
     return max_profit
-
-
-    
-if __name__ == '__main__':
-    w = [18,15,10]
-    p = [25,24,15]
-    Fractional_knapsack(3,w,p,20)
-    
