@@ -9,3 +9,4 @@ def Heap_sort(array):
         h.array[0],h.array[i]=h.array[i],h.array[0]
         h.heap_size-=1
         h.heapify(0)
+    return array

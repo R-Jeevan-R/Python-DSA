@@ -54,6 +54,10 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Graph_traversal_algorithms](Algorithms/Traversal/Graph_traversal_algo.py)
             
 ### Problem solving
+
+- **Being Greedy!(Sometimes makes life better but not everytime 😃)**
+  - [Fractional_knapsack](Problem Solving/Being Greedy!/Fractional_knapsack.py)
+  
 - **Fun With Numbers**
   - [Armstrong_numbes](Problem%20Solving/Fun%20With%20-Numbers-/Armstrong.py)
   - [Factos_and_PrimeFactors](Problem%20Solving/Fun%20With%20-Numbers-/Factors%20and%20Prime%20Factors%20of%20a%20number.py)
