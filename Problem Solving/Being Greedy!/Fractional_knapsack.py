@@ -19,7 +19,7 @@ def Fractional_knapsack(number_of_items,weights,profits,capacity):
         profit_to_weight.append((round(profits[i]/weights[i],2),i))
     
     #Sorting Profit to Weight Ratios (Greedy About P/W Ratios) #O(nlogn)
-    profit_to_weight = [(-pw, i) for pw, i in Heap_sort([(-pw, i) for pw, i in profit_to_weight])]
+    profit_to_weight = Heap_sort(profit_to_weight,asc = False)
     
     #Calculating Maximum Profit
     max_profit = 0

@@ -1,7 +1,7 @@
 # 🐍 Python-DSA
 
 ## 📌 Overview
-Welcome to **Python-DSA**! This repository contains **efficient and well-structured implementations** of fundamental **Data Structures and Algorithms (DSA)** in Python. Whether you are preparing for coding interviews, competitive programming, or improving your problem-solving skills, this repository will be a valuable resource.
+Welcome to **Python-DSA**! This repository contains **efficient and well-structured implementations** of fundamental **Data Structures and Algorithms (DSA)** in Python. 
 
 ## 📂 Contents
 
@@ -26,7 +26,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Binary_tree](Data_Structures/Binary_trees/Binary_tree.py)
   - [Binary_search_tree](Data_Structures/Binary_trees/Binary_search_tree.py)
   - [Balanced_binary_search_tree(AVL_tree)](Data_Structures/Binary_trees/AVL_tree.py)
-  - [Binary_Heap(Max_heap)](Data_Structures/Binary_trees/Max_heap.py)
+  - [Binary_Heaps(Max and Min Heaps)](Data_Structures/Binary_trees/Heaps.py)
 
 - **Graphs**
   - [Graph](Data_Structures/Graphs/Graph.py)
