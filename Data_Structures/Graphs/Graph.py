@@ -16,6 +16,8 @@ class Graph():
         self.nodes = nodes
         self.num_of_nodes = len(nodes)
         self.edges = edges
+
+        #Dictionary for storing indices for labels of nodes
         self.d = dict()
         
         #Adjacency Matrix
@@ -84,6 +86,7 @@ class Graph():
             print(self.nodes[i],end=' ')
             print(row)
             i+=1
+        print('\n "-1" indicates, there is no edge.')
             
 
 
@@ -96,6 +99,8 @@ class Weighted_graph():
         self.nodes = nodes
         self.num_of_nodes=len(nodes)
         self.edges=edges
+
+        #Dictionary for storing indices for labels of nodes
         self.d=dict()
         
         #Adjacency Matrix
@@ -142,15 +147,6 @@ class Weighted_graph():
             self.dict[start].remove(end)
             self.dict[end].remove(start)
 
-    '''Time Complexity -- O(E/V) ---> if only Adjacency List is used.
-                                        O(V) ---> if only Adjacency Matrix is used. '''
-    def degree_of_vertex(self,vertex):
-        if vertex not in self.nodes:
-            print('Vertex/Node is not Found in graph')
-            return
-        return len(self.dict[vertex])
-        #return len([1 for i in range(self.num_of_nodes) if self.matrix[self.d[vertex]][i]==1])-1
-
     
     def print_graph(self):
         print(" * ",end="")
@@ -162,4 +158,67 @@ class Weighted_graph():
             print(self.nodes[i],end=' ')
             print(row)
             i+=1
+        print('\n "-1" indicates, there is no edge.')
+
+
+class Di_Graph_weighted():
+    '''Time Comlexity -- O(n^2) --> if only Adjacency Matrix is used.
+                                     O(V+E) --> if only Adjacency List is used.'''
+    def __init__(self,nodes,edges = []):
+        self.nodes = nodes
+        self.num_of_nodes = len(nodes)
+        self.edges = edges
+
+        #Dictionary for storing indices for labels of nodes
+        self.d = dict()
+        
+        #Adjacency Matrix
+        self.matrix = [[-1 for i in range(self.num_of_nodes)] for j in range(self.num_of_nodes)]
+
+        #Adjacency List 
+        self.dict = dict()
+        
+        for ind,node in enumerate(self.nodes):
+            self.d[node] = ind
+            self.dict[node] = list()
+        self.build_graph()
+
+    def build_graph(self):
+        for i in range(self.num_of_nodes):
+            self.matrix[i][i] = 0
+        for (start,end,weight) in self.edges :
+            #Adjacency Matrix
+            self.matrix[self.d[start]][self.d[end]] = weight
+            #Adjacency List 
+            self.dict[start].append(end)
+
+    '''Time Comlexity -- O(n^2) --> if only Adjacency Matrix is used.
+                                     O(V+E) --> if only Adjacency List is used.'''
+    def add_edges(self,edges):
+        for (start,end,weight) in edges:
+            #Adjacency Matrix
+            self.matrix[self.d[start]][self.d[end]] = weight
+            #Adjacency List 
+            self.dict[start].append(end)
+
+    '''Time Comlexity -- O(n^2) --> if only Adjacency Matrix is used.
+                                     O(V+E) --> if only Adjacency List is used.'''
+    def remove_edges(self,edges):
+        for (start,end) in edges:
+            #Adjacency Matrix
+            self.matrix[self.d[start]][self.d[end]]=-1
+            #Adjacency List 
+            self.dict[start].remove(end)
+
+    def print_graph(self):
+        print(" * ",end="")
+        for node in self.nodes:
+            print(f"{node}   ",end='')
+        print()
+        i=0
+        for row in self.matrix:
+            print(self.nodes[i],end=' ')
+            print(row)
+            i+=1
+        print('\n "-1" indicates, there is no edge.')
         
