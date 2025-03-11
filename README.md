@@ -56,7 +56,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
 ### Problem solving
 
 - **Being Greedy!(Sometimes makes life better but not everytime 😃)**
-  - [Fractional_Knapsack](Problem%20Solving/Being%20Greedy!/Fractiona_knapsack.py)
+  - [Fractional_Knapsack](Problem%20Solving/Being%20Greedy!/Fractional_knapsack.py)
   
 - **Fun With Numbers**
   - [Armstrong_numbes](Problem%20Solving/Fun%20With%20-Numbers-/Armstrong.py)
