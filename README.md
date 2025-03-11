@@ -30,6 +30,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
 
 - **Graphs**
   - [Graph](Data_Structures/Graphs/Graph.py)
+  - [Di-Graph](https://github.com/R-Jeevan-R/Python-DSA/blob/37551fa8cd10689959972db2d6a8b1b4459c16d7/Data_Structures/Graphs/Graph.py#L164)
 
 
 ### 📌 Algorithms
