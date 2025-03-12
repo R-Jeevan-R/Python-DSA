@@ -6,13 +6,13 @@ from Binary_tree_traversal_algo import Traversals
 
 class Node():
     def __init__(self,data):
-        self.left=None
-        self.data=data
-        self.right=None
+        self.left = None
+        self.data = data
+        self.right = None
 
 class Binary_tree():
-    def __init__(self,root_key):
-        self.root=Node(root_key)
+    def __init__(self,root_key = None):
+        self.root = Node(root_key)
 
     #Time Complexity -- O(1)
     def is_leaf(self,node):
@@ -24,12 +24,12 @@ class Binary_tree():
     def height(self,root):
         if not root or self.is_leaf(root):
             return 0
-        return 1+max(self.height(root.left),self.height(root.right))
+        return 1 + max(self.height(root.left), self.height(root.right))
 
     #TIme Complexity -- O(n)
     def number_of_nodes(self,root):
         if root:
-            return 1+self.number_of_nodes(root.left)+self.number_of_nodes(root.right)
+            return 1 + self.number_of_nodes(root.left) + self.number_of_nodes(root.right)
         else:
             return 0
 
@@ -48,21 +48,21 @@ class Binary_tree():
             return 0
         elif self.is_leaf(root):
             return 1
-        return self.number_of_leaves(root.right)+self.number_of_leaves(root.left)
+        return self.number_of_leaves(root.right) + self.number_of_leaves(root.left)
 
     #Time Complexity -- O(n)
     def number_of_non_leaves(self,root):
         if not root or self.is_leaf(root):
             return 0
-        return 1+self.number_of_non_leaves(root.left)+self.number_of_non_leaves(root.right)
+        return 1 + self.number_of_non_leaves(root.left) + self.number_of_non_leaves(root.right)
     
     #Time Complexity -- O(n)
     def number_of_full_nodes(self,root):
         if not root or self.is_leaf(root):
             return 0
         elif root.right and root.left:
-            return 1+self.number_of_full_nodes(root.left)+self.number_of_full_nodes(root.right)
-        return self.number_of_full_nodes(root.left)+self.number_of_full_nodes(root.right)
+            return 1 + self.number_of_full_nodes(root.left) + self.number_of_full_nodes(root.right)
+        return self.number_of_full_nodes(root.left) + self.number_of_full_nodes(root.right)
         
  
 
