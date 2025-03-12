@@ -6,6 +6,11 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')
 
 from Algorithms.Sorting.Heap_sort import Heap_sort #Refer Heap_sort in Sorting Algorithms
 
+'''Fractional Knapsack Problem -- This is an optimization problem.
+Basically, it involves a knapsack(or a Bag) with some capacity and items with weights and their profits and
+we need to maximize the profit by filling the knapsack with items upto its maximum capacity and it
+allowed to fill with fractional part of items.'''
+
 #Time Complexity -- O(nlogn)
 def Fractional_knapsack(number_of_items,weights,profits,capacity):
     #Verifying if info about items is perfectly matching before proceeding further
