@@ -8,7 +8,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
 ### 📌 Data Structures
 
 - **Arrays**
-  - [Array](Data_Structures/Arrays/Array.py.py)
+  - [Array](Data_Structures/Arrays/Array.py)
 
 - **Linked Lists**
   - [Singly Linked List](Data_Structures/Linked_lists/linked_list.py)
