@@ -7,6 +7,9 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
 
 ### 📌 Data Structures
 
+- **Arrays**
+  - [Array](Data_Structures/Arrays/Array.py.py)
+
 - **Linked Lists**
   - [Singly Linked List](Data_Structures/Linked_lists/linked_list.py)
   - [Doubly Linked List](Data_Structures/Linked_lists/doubly_linked_list.py)
@@ -67,3 +70,9 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [LeapYear_or_Not](Problem%20Solving/Fun%20With%20-Numbers-/Leap_year_or_not.py)
   - [PrimeNumbers](Problem%20Solving/Fun%20With%20-Numbers-/Primes.py)
   - [Reverses_of_(Number,String,List,Tuple)](Problem%20Solving/Fun%20With%20-Numbers-/Reverse%20of%20(Number,String,List,Tuple).py)
+
+- **Playing With Arrays**
+  - [Sum_of_Subarrays](Problem%20Solving/Playing%20with%20Arrays/Sum_of_sub_arrays.py)
+
+- **Dynamic Programming**
+  -[Unique_Paths](Problem%20Solving/Program%20@Dynamic/Unique_paths.py)
