@@ -23,16 +23,16 @@ class Node():
     def __lt__(self, other):  # Less than
         return self.data < other.data
 
-    def __gt__(self, other):  # Equality check
+    def __gt__(self, other):  # Greater Than
         return self.data > other.data
 
 bt = Binary_tree()
-def weighted_external_path_length(root):
+def weighted_external_path_length(root):    #O(n)
     if not root or bt.is_leaf(root):
         return 0
     return root.data + weighted_external_path_length(root.left) + weighted_external_path_length(root.right)
 
-def set_codes(root):
+def set_codes(root):    #O(n)
     if root:
         if root.left:
             root.left.code = root.code + '0'
@@ -41,7 +41,7 @@ def set_codes(root):
             root.right.code = root.code + '1'
             set_codes(root.right)
 
-def get_codes(root,codes):
+def get_codes(root,codes):  #O(n)
     if root:
         if bt.is_leaf(root):
             codes[root.key] = root.code
@@ -49,31 +49,28 @@ def get_codes(root,codes):
         get_codes(root.right, codes)
 
 
+#Time Complexity -- O(nlogn)
 def Huffman_coding(Text):
     Text = Text.strip()
     Map = dict()
-    for ch in Text:
+    for ch in Text: #O(n)
         if ch in Map:
             Map[ch] += 1
         else:
             Map[ch] = 1
     n = len(Map.keys())
-    heap = Min_heap([Node(count, key = key) for key, count in Map.items()])
-    for i in range(n-1):
-        left = heap.extract_min()
-        right = heap.extract_min()
+    heap = Min_heap([Node(count, key = key) for key, count in Map.items()]) #O(n)
+    for _ in range(n-1):    #O(nlogn)
+        left = heap.extract_min()   #O(logn)
+        right = heap.extract_min()  #O(logn)
         root = Node(left.data + right.data)
         root.left = left
         root.right = right
-        heap.insert_key(root)
+        heap.insert_key(root)   #O(logn)
         
     wept = weighted_external_path_length(root)
     set_codes(root)
     codes = dict()
     get_codes(root,codes)
-    print(codes)
-    print(wept)
-    return codes
+    return wept, codes
 
-if __name__ == '__main__':
-    root = Huffman_coding("a" * 40 + "b" * 30 + "c" * 20 + "d" * 5 + "e" * 3 + "f" * 2)
