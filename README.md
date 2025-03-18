@@ -8,7 +8,7 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
 ### 📌 Data Structures
 
 - **Arrays**
-  - [Array](Data_Structures/Arrays/Array.py.py)
+  - [Array](Data_Structures/Arrays/Array.py)
 
 - **Linked Lists**
   - [Singly Linked List](Data_Structures/Linked_lists/linked_list.py)
@@ -75,4 +75,4 @@ Welcome to **Python-DSA**! This repository contains **efficient and well-structu
   - [Sum_of_Subarrays](Problem%20Solving/Playing%20with%20Arrays/Sum_of_sub_arrays.py)
 
 - **Dynamic Programming**
-  -[Unique_Paths](Problem%20Solving/Program%20@Dynamic/Unique_paths.py)
+  - [Unique_Paths](Problem%20Solving/Program%20@Dynamic/Unique_paths.py)
