@@ -1,8 +1,13 @@
 '''Binary tree -- A hierarchical data structure that stores data items in connected nodes.
 Each node in binary tree will have maximum of two children i.e may have one or both left and right childs.
 '''
+import os
+import sys
 
-from Binary_tree_traversal_algo import Traversals
+# Add the parent directory to sys.path to access sibling modules
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
+
+from Algorithms.Traversal.Binary_tree_traversal_algo import Traversals
 
 class Node():
     def __init__(self,data):
@@ -63,7 +68,3 @@ class Binary_tree():
         elif root.right and root.left:
             return 1 + self.number_of_full_nodes(root.left) + self.number_of_full_nodes(root.right)
         return self.number_of_full_nodes(root.left) + self.number_of_full_nodes(root.right)
-        
- 
-
-        
