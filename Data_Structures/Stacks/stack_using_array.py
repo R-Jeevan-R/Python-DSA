@@ -3,9 +3,6 @@ Implementing stack using an array stores elements in contingous memory
 locations and addition as well as deletion of an element is done at the end of array.'''
 
 class Stack():
-    stack=[]
-    top=0
-    max_size=0
     def __init__(self,max_size):
         self.max_size=max_size
         self.stack=[float('inf')]*self.max_size
@@ -58,10 +55,3 @@ class Stack():
     def print_stack(self):
         for i in range(self.top,-1,-1):
             print(self.stack[i])
-
-
-
-
-
-
-    

@@ -52,5 +52,3 @@ class Stack():
         while temp:
             print(f"{temp.data}")
             temp=temp.next
-
-
