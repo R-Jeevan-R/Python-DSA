@@ -58,6 +58,3 @@ class Queue():
             temp=temp.next
         print(temp.data,end='->')
         print(None)
-
-            
-        

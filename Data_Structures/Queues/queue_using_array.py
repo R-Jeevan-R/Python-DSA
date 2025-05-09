@@ -4,9 +4,6 @@ Addition of elements is done at start of array where as Deletion of elements
 is done at the end of array.'''
 
 class Queue():
-    queue=[]
-    front=rear=0
-    max_size=0
     def __init__(self,max_size):
         self.front=-1
         self.rear=-1
@@ -37,7 +34,7 @@ class Queue():
             print("Queue Underflow\n")
             return
         elif self.front==self.rear:
-            d=self.queue[self,front]
+            d=self.queue[self.front]
             self.queue[self.front]=float('inf')
             self.front=-1
             self.rear=-1
@@ -73,6 +70,3 @@ class Queue():
         for i in range(self.front,self.rear+1):
             print(self.queue[i],end=' ')
         print()
-
-
-        
