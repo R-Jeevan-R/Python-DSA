@@ -114,7 +114,3 @@ class Doubly_linked_list():
         while temp.next.next:
             temp=temp.next
         temp.next=None
-
-
-        
-    

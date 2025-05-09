@@ -41,7 +41,7 @@ class Linked_list():
                 print("Inappropriate position to insert a node")
                 return
             else:
-                self.add(element)
+                self.add(data)
                 return
         temp=self.head
         for i in range(1,position-1):
@@ -88,15 +88,3 @@ class Linked_list():
         while temp.next.next:
             temp=temp.next
         temp.next=None
-            
-        
-        
-
-
-
-
-
-
-        
-            
-        
